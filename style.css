@@ -1,18 +1,25 @@
 /*  CCS DE PAG NO EN PANTALLA COMPLETA */
+
 /* Estilos de imagen de fondo */
+
 body {
     /* Ubicación de la imagen */
     background-image: url(https://img2.freepng.es/20180326/suw/kisspng-computer-software-desktop-wallpaper-clip-art-sky-5ab93e2c47e7b5.1403352415220895162945.jpg);
     /* Para dejar la imagen de fondo centrada, vertical y
      horizontalmente */
-    background-position: center center;  /* Para que la imagen de fondo no se repita */ 
-    background-repeat: no-repeat;  /* La imagen se fija en la ventana de visualización para que la altura de la imagen no supere a la del contenido */
-    background-attachment: fixed;  /* La imagen de fondo se reescala automáticamente con el cambio del ancho de ventana del navegador */
-    background-size: cover; /* Se muestra un color de fondo mientras se está cargando la imagen de fondo o si hay problemas para cargarla */
-    background-color: rgba(83, 226, 245, 0.733);   
+    background-position: center center;
+    /* Para que la imagen de fondo no se repita */
+    background-repeat: no-repeat;
+    /* La imagen se fija en la ventana de visualización para que la altura de la imagen no supere a la del contenido */
+    background-attachment: fixed;
+    /* La imagen de fondo se reescala automáticamente con el cambio del ancho de ventana del navegador */
+    background-size: cover;
+    /* Se muestra un color de fondo mientras se está cargando la imagen de fondo o si hay problemas para cargarla */
+    background-color: rgba(83, 226, 245, 0.733);
 }
 
 /* formato imagen */
+
 img {
     display: inline;
     margin: 1%;
@@ -21,6 +28,7 @@ img {
 }
 
 /* Titulos y parrafo */
+
 h1 {
     font-size: 2em;
 }
@@ -38,16 +46,18 @@ p {
 }
 
 /* Clase para mejorar titulos */
+
 .titulo {
-color: rgb(0, 0, 0);
-padding: 2%;
-text-align: center;
-font-family: 'Courier New', Courier, monospace;
-font-weight: bolder;
-margin-top: 3%;
+    color: rgb(0, 0, 0);
+    padding: 2%;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+    margin-top: 3%;
 }
 
 /* Clases de ubicación */
+
 .centrar {
     text-align-last: center;
 }
@@ -59,8 +69,10 @@ margin-top: 3%;
 }
 
 /*imagen formularios */
+
 #formulario {
-    font-family: 'Courier New', Courier, monospace;;
+    font-family: 'Courier New', Courier, monospace;
+    ;
     font-size: 25px;
     width: 500px;
     margin: 25px auto;
@@ -105,7 +117,6 @@ margin-top: 3%;
     background-color: #cdd374;
 }
 
-
 /* Formato para todo menú de navegación*/
 
 .topnav {
@@ -113,7 +124,7 @@ margin-top: 3%;
     width: auto;
     color: blanchedalmond;
     font-family: 'Courier New', Courier, monospace;
-    background-color:#2c3e50;
+    background-color: #2c3e50;
     overflow: hidden;
     opacity: 0.9;
 }
@@ -131,7 +142,7 @@ margin-top: 3%;
 }
 
 .nave li a {
-    background-color:#2c3e50;
+    background-color: #2c3e50;
     color: blanchedalmond;
     display: block;
     text-align: center;
@@ -151,6 +162,7 @@ margin-top: 3%;
 }
 
 /* hover para cambiar estylo cuando el mause pase por encima */
+
 .topnav :hover {
     background-color: rgb(42, 107, 150);
     opacity: 1.0;
@@ -176,18 +188,20 @@ margin-top: 3%;
     display: none;
 }
 
-
 /* COMIENZO DE MEDIAS QUARYS */
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 500px) {
+    #formulario {
+        width: auto;
+    }
+}
 
+@media screen and (max-width: 750px) {
     img {
         display: inline;
-        margin: 2% auto;
-        max-width: 50%;
+        margin: 2%;
         width: 30%;
     }
-
     .titulo {
         color: rgb(0, 0, 0);
         padding: 2%;
@@ -196,44 +210,24 @@ margin-top: 3%;
         font-weight: bolder;
         margin-top: 3%;
     }
-
-    #formulario {
-        font-family: 'Courier New', Courier, monospace;;
-        font-size: 25px;
-        width: 500px;
-        margin: 25px auto;
-        padding: 20px;
-        background: #2c3e50;
-        color: #fff;
-        -moz-border-radius: 4px;
-        -webkit-border-radius: 4px;
-        border-radius: 4px;
-    }
-
-
     /* mediasquarys para hacer .responsiv el menú y darle forma*/
-
     .topnav a:not(.active) {
         /*esta función hace que bajo 750 px se esconda todo el menu excepto la pagina activa*/
         display: none;
     }
-    
     .topnav a.icon {
         /*esta función hace que bajo 750 px nuestre el icono de menu */
         display: block;
         padding: 10px 15px;
         position: relative;
     }
-
     .topnav {
         margin-left: 2%;
         width: auto;
     }
-
     .nave li a {
         font-size: 18px;
     }
-
     /* mediaquary que  da forma a la clase responsive despues de ser añadida por botones.js function menu*/
     .topnav.responsive a.icon {
         /*esta función hace que bajo 750 px nuestre el icono de menu */
@@ -252,7 +246,6 @@ margin-top: 3%;
     }
 }
 
-
 @media screen and (max-width:930px) {
     .topnav {
         margin-left: 4%;
@@ -263,14 +256,12 @@ margin-top: 3%;
 }
 
 @media screen and (max-width:1150px) {
-    
     img {
         display: inline;
         margin: 1%;
         max-width: 60%;
         width: 30%;
     }
-    
     .topnav {
         margin-left: 6%;
         width: auto;
@@ -279,4 +270,3 @@ margin-top: 3%;
         font-size: 15px;
     }
 }
-
